@@ -1,0 +1,700 @@
+:root{
+  --main-color:#1b78c9;
+  --second-blue-color : #3291e6;
+  --light-blue: #B6DBF6;
+  --gray-color:#444444;
+  --light-color:#fff;
+  --grey-color: #f2f2f2;
+}
+.blue-shadow{
+  box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
+}
+.grey-shadow{
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+.black-shadow{
+  box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+.black-btn-shadow{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.text-main{
+  color: var(--main-color);
+}
+.bgr-light{
+  background-color: var(--light-color);
+}
+.bg-grey{
+  background: var(--grey-color);
+}
+.btn-primary{
+  background-color: var(--main-color);
+}
+.bgr-dark-grey{
+  background-color: #f0f0f0;
+}
+.txt-dark-grey{
+  color: #acacac;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--gray-color);
+  overflow-x: hidden;
+}
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+.text-dark-blue{
+  color: #2c4964;
+
+}
+a:hover {
+  color: var(--second-blue-color);
+  text-decoration: none;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+h1{
+  font-size: 1.8vw;
+}
+h2{
+  font-size: 1.7vw;
+}
+h3{
+  font-size: 1.6vw;
+}
+h4{
+  font-size: 1.5vw;
+}
+h5{
+  font-size: 1.4vw;
+}
+h6 , p {
+  font-size: 1.3vw;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+textarea{
+  resize: none;
+  min-height: 150px;
+
+}
+/*-------------# Preloader---------------------*/
+/* #preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: var(--light-color);
+}
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  border: 6px solid var(--main-color);
+  border-top-color: #d1e6f9;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1s linear infinite;
+  -webkit-transform: translate(-50% , -50%);
+  -moz-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  -o-transform: translate(-50% , -50%);
+}
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #2c4964;
+}
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 15%;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 5%;
+  height: 3px;
+  background:var(--main-color) ;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+@media screen and (max-width : 680px) {
+  .secContainer{
+    width: 90% !important;
+  }
+}
+@media screen and (max-width : 790px) {
+  .secContainer{
+    width: 80% !important;
+  }
+}
+/*--------------------------------------------------------------
+# Why Us
+--------------------------------------------------------------*/
+#whyUs {
+  background: url("../src/assets/img/slide1.jpg") top center;
+  background-color: #e1eaf3;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.field:focus{
+    border: 2px solid var(--main-color);
+    background-color: var(--light-color);
+}
+/*--------------------------------------------------------------
+# forum
+--------------------------------------------------------------*/
+.input-field input {
+  background: none !important;
+  outline: none !important;
+  border: none !important;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+.input-field input::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+.select-image {
+	display:block;
+	width: 100%;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	background:var(--main-color);
+	color: var(--light-color);
+	font-weight: 500;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+.select-patient{
+width: 100%;
+display: flex;
+background: var(--light-color);
+padding: 10px;
+font-size: 15px;
+font-weight: 400;
+border-radius: 8px;
+align-items: center;
+cursor: pointer;
+justify-content: space-between;
+}
+#forum form{
+  width: 55%;
+}
+@media screen and (max-width: 600px) {
+  #forum form,.histoForm,.endoForm
+  {width: 80%;}
+  }
+.histoForm , .endoForm{
+  width: 50%;
+}
+/*--------------------------------------------------------------
+# histopathology
+--------------------------------------------------------------*/
+.img-area p {
+	color: #999;
+}
+.img-area img {
+	position: absolute;
+  inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+  aspect-ratio: 16/9;
+	object-position: center;
+	z-index: 100;
+}
+.img-area::before {
+	content: attr(data-img);
+	position: absolute;
+  inset: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	color: var(--light-color);
+	font-weight: 500;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: all .3s ease;
+	z-index: 200;
+}
+.img-area.active:hover::before {
+	opacity: 1;
+}
+/*---------------------------------------------------------------------------------------------------------------------------*/
+#tumorMarker .input-field{
+  min-width: 150px;
+}
+/* ----------------------- */
+.togglePassword{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+/* ///////////////////////// TUMOR  /////////*/
+.patient-list{
+  background-color: var(--light-color);
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+/* ------------------ */
+.navbar-nav .nav-link.active 
+{
+  color: var(--main-color);
+}
+.navbar-nav .nav-link:hover ,
+.dropdown-item:hover
+{  
+  color: var(--second-blue-color);
+}
+.navbar-brand:hover{
+  color: var(--second-blue-color);
+}
+/* ----- */
+.p-column-header-content{
+  justify-content: center;
+}
+
+
+#lines,
+#target_gene,
+#original_gene {
+  white-space: nowrap;
+}
+#target_gene,
+#original_gene {
+  font-size: 1.01rem;
+
+}
+.geneCompare{
+  overflow-x: scroll;
+}
+
+
+
+
+
+
+.signup .forms-container ,
+.loginContainer .forms-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .signup  .signin-signup ,
+  .loginContainer  .signin-signup {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 75%;
+    width: 50%;
+    transition: 1s 0.7s ease-in-out;
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 5;
+  }
+  
+  .signup  form ,
+  .loginContainer  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem 5rem;
+    transition: all 0.2s 0.7s;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .signup  form.sign-up-form ,
+  .loginContainer  form.sign-up-form {
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  .signup  form.sign-in-form ,
+  .loginContainer  form.sign-in-form {
+    z-index: 2;
+  }
+  
+ .title {
+    font-size: 2.2rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .signup .btn ,
+  .loginContainer .btn 
+    {
+    width: 150px;
+    background-color: #5995fd;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .signup .btn:hover,
+  .loginContainer .btn:hover
+   {
+    background-color: #4d84e2;
+  }
+  .panels-container {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+  }
+  
+  .signup  .container:before ,
+  .loginContainer  .container:before {
+    content: "";
+    position: absolute;
+    height: 2000px;
+    width: 2000px;
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+    background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
+    transition: 1.8s ease-in-out;
+    border-radius: 50%;
+    z-index: 6;
+  }
+  
+  .signup  .image ,
+  .loginContainer  .image {
+    width: 100%;
+    transition: transform 1.1s ease-in-out;
+    transition-delay: 0.4s;
+  }
+  
+   .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-align: center;
+    z-index: 6;
+  }
+  
+   .left-panel {
+    pointer-events: all;
+    padding: 3rem 17% 2rem 12%;
+  }
+  
+ .right-panel {
+    pointer-events: none;
+    padding: 3rem 12% 2rem 17%;
+  }
+  
+  .panel .content {
+    color: #fff;
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 0.6s;
+  }
+  
+    .panel h3 {
+    font-weight: 600;
+    line-height: 1;
+    font-size: 1.5rem;
+  }
+  
+  .panel p {
+    font-size: 0.95rem;
+    padding: 0.7rem 0;
+  }
+  
+  .loginContainer .btn.transparent ,
+  .signup .btn.transparent 
+  {
+    margin: 0;
+    background: none;
+    border: 2px solid #fff;
+    width: 130px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  
+  .right-panel .image,
+  .right-panel .content {
+    transform: translateX(800px);
+  }
+  
+  /* ANIMATION */
+  
+  .container.sign-up-mode:before {
+    transform: translate(100%, -50%);
+    right: 52%;
+  }
+  
+  .container.sign-up-mode .left-panel .image,
+  .container.sign-up-mode .left-panel .content {
+    transform: translateX(-800px);
+  }
+  
+  .container.sign-up-mode .signin-signup {
+    left: 25%;
+  }
+  
+  .container.sign-up-mode form.sign-up-form {
+    opacity: 1;
+    z-index: 2;
+  }
+  
+  .container.sign-up-mode form.sign-in-form {
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  .container.sign-up-mode .right-panel .image,
+  .container.sign-up-mode .right-panel .content {
+    transform: translateX(0%);
+  }
+  
+  .container.sign-up-mode .left-panel {
+    pointer-events: none;
+  }
+  
+  .container.sign-up-mode .right-panel {
+    pointer-events: all;
+  }
+  
+  @media (max-width: 870px) {
+    .signup  .container ,
+    .loginContainer  .container {
+      height: 100vh;
+    }
+    .signup  .signin-signup ,
+    .loginContainer  .signin-signup {
+      width: 100%;
+      top: 95%;
+      transform: translate(-50%, -100%);
+      transition: 1s 0.8s ease-in-out;
+    }
+  
+    .signin-signup,
+    .container.sign-up-mode .signin-signup {
+      left: 50%;
+    }
+  
+    .panels-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr 1fr;
+    }
+  
+    .panel {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 2.5rem 8%;
+      grid-column: 1 / 2;
+    }
+  
+    .right-panel {
+      grid-row: 3 / 4;
+    }
+  
+    .left-panel {
+      grid-row: 1 / 2;
+    }
+  
+    .signup  .image ,
+    .loginContainer  .image {
+      width: 200px;
+      transition: transform 0.9s ease-in-out;
+      transition-delay: 0.6s;
+    }
+  
+    .panel .content {
+      padding-right: 15%;
+      transition: transform 0.9s ease-in-out;
+      transition-delay: 0.8s;
+    }
+  
+    .panel h3 {
+      font-size: 1.2rem;
+    }
+  
+    .panel p {
+      font-size: 0.7rem;
+      padding: 0.5rem 0;
+    }
+  
+    .signup .btn.transparent ,
+    .loginContainer .btn.transparent {
+      width: 110px;
+      height: 35px;
+      font-size: 0.7rem;
+    }
+  
+    .signup   .container:before ,
+    .loginContainer   .container:before {
+      width: 1500px;
+      height: 1500px;
+      transform: translateX(-50%);
+      left: 30%;
+      bottom: 68%;
+      right: initial;
+      top: initial;
+      transition: 2s ease-in-out;
+    }
+  
+    .signup   .container.sign-up-mode:before {
+      transform: translate(-50%, 100%);
+      bottom: 32%;
+      right: initial;
+    }
+  
+    .container.sign-up-mode .left-panel .image,
+    .container.sign-up-mode .left-panel .content {
+      transform: translateY(-300px);
+    }
+  
+    .container.sign-up-mode .right-panel .image,
+    .container.sign-up-mode .right-panel .content {
+      transform: translateY(0px);
+    }
+  
+    .right-panel .image,
+    .right-panel .content {
+      transform: translateY(300px);
+    }
+  
+    .signup   .container.sign-up-mode .signin-signup {
+      top: 5%;
+      transform: translate(-50%, 0);
+    }
+  }
+  
+  @media (max-width: 570px) {
+    .signup   form ,
+    .loginContainer   form {
+      padding: 0 1.5rem;
+    }
+  
+    .signup    .image ,
+    .loginContainer    .image {
+      display: none;
+    }
+    .panel .content {
+      padding: 0.5rem 1rem;
+    }
+    .signup  .container ,
+    .loginContainer  .container {
+      padding: 1.5rem;
+    }
+  
+    .signup  .container:before ,
+    .loginContainer  .container:before {
+      bottom: 72%;
+      left: 50%;
+    }
+  
+    .signup   .container.sign-up-mode:before {
+      bottom: 28%;
+      left: 50%;
+    }
+  }
